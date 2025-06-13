@@ -16,7 +16,25 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata",
+							"host": [
+								"www",
+								"themealdb",
+								"com"
+							],
+							"path": [
+								"api",
+								"json",
+								"v1",
+								"1",
+								"search.php"
+							],
+							"query": [
+								{
+									"key": "s",
+									"value": "Arrabiata"
+								}
+							]
 						}
 					},
 					"response": []
@@ -32,7 +50,25 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "www.themealdb.com/api/json/v1/1/search.php?f=a",
+							"host": [
+								"www",
+								"themealdb",
+								"com"
+							],
+							"path": [
+								"api",
+								"json",
+								"v1",
+								"1",
+								"search.php"
+							],
+							"query": [
+								{
+									"key": "f",
+									"value": "a"
+								}
+							]
 						}
 					},
 					"response": []
@@ -43,7 +79,25 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "www.themealdb.com/api/json/v1/1/lookup.php?i=52772",
+							"host": [
+								"www",
+								"themealdb",
+								"com"
+							],
+							"path": [
+								"api",
+								"json",
+								"v1",
+								"1",
+								"lookup.php"
+							],
+							"query": [
+								{
+									"key": "i",
+									"value": "52772"
+								}
+							]
 						}
 					},
 					"response": []
@@ -54,7 +108,42 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "www.themealdb.com/api/json/v1/1/random.php",
+							"host": [
+								"www",
+								"themealdb",
+								"com"
+							],
+							"path": [
+								"api",
+								"json",
+								"v1",
+								"1",
+								"random.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List All Meal Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "www.themealdb.com/api/json/v1/1/categories.php",
+							"host": [
+								"www",
+								"themealdb",
+								"com"
+							],
+							"path": [
+								"api",
+								"json",
+								"v1",
+								"1",
+								"categories.php"
+							]
 						}
 					},
 					"response": []
@@ -65,7 +154,25 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "www.themealdb.com/api/json/v1/1/list.php?c=list",
+							"host": [
+								"www",
+								"themealdb",
+								"com"
+							],
+							"path": [
+								"api",
+								"json",
+								"v1",
+								"1",
+								"list.php"
+							],
+							"query": [
+								{
+									"key": "c",
+									"value": "list"
+								}
+							]
 						}
 					},
 					"response": []
@@ -76,7 +183,25 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "www.themealdb.com/api/json/v1/1/list.php?i=list",
+							"host": [
+								"www",
+								"themealdb",
+								"com"
+							],
+							"path": [
+								"api",
+								"json",
+								"v1",
+								"1",
+								"list.php"
+							],
+							"query": [
+								{
+									"key": "i",
+									"value": "list"
+								}
+							]
 						}
 					},
 					"response": []
@@ -87,7 +212,54 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "www.themealdb.com/api/json/v1/1/list.php?a=list",
+							"host": [
+								"www",
+								"themealdb",
+								"com"
+							],
+							"path": [
+								"api",
+								"json",
+								"v1",
+								"1",
+								"list.php"
+							],
+							"query": [
+								{
+									"key": "a",
+									"value": "list"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List All Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "www.themealdb.com/api/json/v1/1/list.php?c=list",
+							"host": [
+								"www",
+								"themealdb",
+								"com"
+							],
+							"path": [
+								"api",
+								"json",
+								"v1",
+								"1",
+								"list.php"
+							],
+							"query": [
+								{
+									"key": "c",
+									"value": "list"
+								}
+							]
 						}
 					},
 					"response": []
@@ -103,7 +275,25 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast",
+							"host": [
+								"www",
+								"themealdb",
+								"com"
+							],
+							"path": [
+								"api",
+								"json",
+								"v1",
+								"1",
+								"filter.php"
+							],
+							"query": [
+								{
+									"key": "i",
+									"value": "chicken_breast"
+								}
+							]
 						}
 					},
 					"response": []
@@ -114,7 +304,25 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "www.themealdb.com/api/json/v1/1/filter.php?c=Seafood",
+							"host": [
+								"www",
+								"themealdb",
+								"com"
+							],
+							"path": [
+								"api",
+								"json",
+								"v1",
+								"1",
+								"filter.php"
+							],
+							"query": [
+								{
+									"key": "c",
+									"value": "Seafood"
+								}
+							]
 						}
 					},
 					"response": []
@@ -125,7 +333,25 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "www.themealdb.com/api/json/v1/1/filter.php?a=Canadian",
+							"host": [
+								"www",
+								"themealdb",
+								"com"
+							],
+							"path": [
+								"api",
+								"json",
+								"v1",
+								"1",
+								"filter.php"
+							],
+							"query": [
+								{
+									"key": "a",
+									"value": "Canadian"
+								}
+							]
 						}
 					},
 					"response": []
