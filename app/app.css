@@ -15,8 +15,6 @@ body {
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
-
-  padding: 5px 10px;
 }
 
 @theme inline {

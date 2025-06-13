@@ -8,11 +8,9 @@ export function meta({}: Route.MetaArgs) {
     { name: "description", content: "Compile Your Cravings" },
   ];
 }
-//    <h1 className="text-4xl font-extrabold mb-4">Meals Explorer</h1>
-
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 gap-2">
+    <div className="flex flex-col items-center justify-center min-h-screen gap-2">
 
       <div className="flex items-center space-x-2 ">
         <h3 className="text-2xl font-semibold">Compile Your Cravings</h3>
