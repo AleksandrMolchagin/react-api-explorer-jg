@@ -13,8 +13,8 @@ import {
 
 export default function MealsLayout() {
   return (
-    <div className="bg-gray-50">
-      <section className="flex flex-row pt-2 px-4">
+    <div className="bg-gray-30">
+      <section className="flex flex-row pt-4 px-8">
        <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mr-auto">
         Meals Explorer
       </h3>

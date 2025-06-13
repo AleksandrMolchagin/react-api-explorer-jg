@@ -1,6 +1,5 @@
 
 import axios from 'axios';
-
 const BASE_URL = 'https://www.themealdb.com/api/json/v1/1';
 
 export interface Meal {
@@ -78,12 +77,6 @@ export interface ListCategoriesResponse {
     }[]
 }
 
-export interface ListCategoriesResponse {
-    meals: {
-        strCategory: string;
-    }[]
-}
-
 export interface ListIngridientsResponse {
     meals: {
         idIngredient: string;
@@ -99,13 +92,20 @@ export interface ListAreasResponse {
     }[]
 }
 
-export interface FilterResponse {
-    meals: {
-        strMeal: string;
-        strMealThumb: string;
-        idMeal: string;
-    }[]
+export interface FilterResponseItem{
+    strMeal: string;
+    strMealThumb: string;
+    idMeal: string;
 }
+
+export interface FilterResponse {
+    meals: FilterResponseItem[]
+}
+
+export interface CustomListItem {
+  itemId: string;
+}
+export type CustomListResponse = CustomListItem[];
 
 export const searchMealByName = async (name: string): Promise<MealsResponse> => {
     const response = await axios.get<MealsResponse>(`${BASE_URL}/search.php`, {
@@ -186,3 +186,19 @@ export const filterByArea = async (area: string): Promise<FilterResponse> => {
     });
     return response.data;
 };
+
+export const customList = async(type: string): Promise<CustomListResponse> => {
+    let items: string[] = [];
+
+    if (type === 'categories') {
+        const { meals } = await listCategories();
+        items = meals.map((m) => m.strCategory);
+    } else if (type === 'ingredients') {
+        const { meals } = await listIngredients();
+        items = meals.map((m) => m.strIngredient);
+    } else {
+        const { meals } = await listAreas();
+        items = meals.map((m) => m.strArea);
+    }
+    return items.map((itemId) => ({ itemId }));
+}
